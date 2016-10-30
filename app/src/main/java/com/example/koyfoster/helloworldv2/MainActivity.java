@@ -234,8 +234,6 @@ public class MainActivity extends AppCompatActivity
     }
     public void sndVoiceWords(String words)
     {
-        //tv.DoThing(_sHeroes[_iLastHero]);
-        //Toast.makeText(main, words,Toast.LENGTH_SHORT).show();
         if(_cbMute.isChecked() == false)
         {
             String utteranceId = this.hashCode() + "";

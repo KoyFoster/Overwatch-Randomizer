@@ -20,9 +20,9 @@ public class HeroSelectController
                     ,"Sombra","Doomfist","?????"
             };
     String _sHeroesPro[] =
-            {"Ghenji","Mik Cree","Pharah","Reaper","Soldier:76", "Tracer"
+            {"Ghenji","Mik Cree","Pharah","Reaper","Soldier 76", "Tracer"
                     ,"Bastion","Honzo","JunkRat","Mei","Torbjörn","WidowMaker"
-                    ,"D.Va","Reinhardt","Roadhog","Winston","Zar-ya"
+                    ,"DeeVah","Reinhardt","Roadhog","Winston","Zah-reah"
                     ,"Ana","Lúcio","Mercy","Symmetra","Zenyatta"
                     ,"Sombra","Doomfist","?????"
             };

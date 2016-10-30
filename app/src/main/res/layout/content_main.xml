@@ -395,8 +395,8 @@
         android:textColor="#ffffff"
         android:buttonTint="#ffffff"
         android:layout_below="@+id/buttonRandHero"
-        android:layout_alignLeft="@+id/gridLayout2"
-        android:layout_alignStart="@+id/gridLayout2" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -415,9 +415,8 @@
         android:checked="false"
         android:textColor="#ffffff"
         android:buttonTint="#ffffff"
-        android:layout_above="@+id/gridLayout2"
-        android:layout_toRightOf="@+id/checkBoxPlayAll"
-        android:layout_toLeftOf="@+id/buttonReset"
-        android:layout_toStartOf="@+id/buttonReset" />
+        android:layout_below="@+id/buttonRandHero"
+        android:layout_toRightOf="@+id/buttonAbout"
+        android:layout_toEndOf="@+id/buttonAbout" />
 
 </RelativeLayout>
