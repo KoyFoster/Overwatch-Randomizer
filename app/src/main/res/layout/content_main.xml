@@ -407,4 +407,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:id="@+id/checkBoxMute"
+        android:checked="false"
+        android:textColor="#ffffff"
+        android:buttonTint="#ffffff"
+        android:layout_above="@+id/gridLayout2"
+        android:layout_toRightOf="@+id/checkBoxPlayAll"
+        android:layout_toLeftOf="@+id/buttonReset"
+        android:layout_toStartOf="@+id/buttonReset" />
+
 </RelativeLayout>

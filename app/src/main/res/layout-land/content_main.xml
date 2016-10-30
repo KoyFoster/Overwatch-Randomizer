@@ -396,9 +396,9 @@
         android:checked="false"
         android:textColor="#ffffff"
         android:buttonTint="#ffffff"
-        android:layout_below="@+id/buttonReset"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/checkBoxMute"
+        android:layout_alignRight="@+id/buttonReset"
+        android:layout_alignEnd="@+id/buttonReset" />
 
     <Button
         android:layout_width="wrap_content"
@@ -408,5 +408,17 @@
         android:layout_alignBottom="@+id/gridLayout"
         android:layout_alignRight="@+id/checkBoxPlayAll"
         android:layout_alignEnd="@+id/checkBoxPlayAll" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:id="@+id/checkBoxMute"
+        android:checked="false"
+        android:textColor="#ffffff"
+        android:buttonTint="#ffffff"
+        android:layout_below="@+id/buttonReset"
+        android:layout_alignRight="@+id/buttonRandHero"
+        android:layout_alignEnd="@+id/buttonRandHero" />
 
 </RelativeLayout>
