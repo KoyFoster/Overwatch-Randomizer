@@ -8,23 +8,23 @@ import java.util.Random;
 public class HeroSelectController
 {
     int _iLastHero = -1;
-    int _iMaxHeroes = 22;
-    int _iRemainingHeroesSize = 22;
-    int _iRemainingHeroes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22};
+    int _iMaxHeroes = 23;
+    int _iRemainingHeroesSize = 23;
+    int _iRemainingHeroes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
     //Hero List
     String _sHeroes[] =
-            {"Genji","McCree","Pharah","Reaper","Soldier: 76", "Tracer"
+            {"Genji","McCree","Pharah","Reaper","Soldier: 76", "Sombra", "Tracer"
                     ,"Bastion","Hanzo","JunkRat","Mei","Torbjörn","WidowMaker"
                     ,"D.Va","Reinhardt","Roadhog","Winston","Zarya"
                     ,"Ana","Lúcio","Mercy","Symmetra","Zenyatta"
-                    ,"Sombra","Doomfist","?????"
+                    ,"Doomfist","?????"
             };
     String _sHeroesPro[] =
-            {"Ghenji","Mik Cree","Pharah","Reaper","Soldier 76", "Tracer"
+            {"Ghenji","Mik Cree","Pharah","Reaper","Soldier 76", "Sombra", "Tracer"
                     ,"Bastion","Honzo","JunkRat","Mei","Torbjörn","WidowMaker"
                     ,"DeeVah","Reinhardt","Roadhog","Winston","Zah-reah"
                     ,"Ana","Lúcio","Mercy","Symmetra","Zenyatta"
-                    ,"Sombra","Doomfist","?????"
+                    ,"Doomfist","?????"
             };
 
     //Constructor
@@ -41,7 +41,7 @@ public class HeroSelectController
         //RESET List
         for(int i=0; i<_iMaxHeroes; i++)
         {_iRemainingHeroes[i] = i+1;}
-        _iRemainingHeroesSize = 22;
+        _iRemainingHeroesSize = _iMaxHeroes;
     }
 
     public int GetRandomInt(int min, int max)

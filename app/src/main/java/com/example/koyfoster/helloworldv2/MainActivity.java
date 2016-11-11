@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
                     null, null, null, null,
                     null, null, null, null,
                     null, null, null, null,
-                    null, null
+                    null, null, null
             };
 
 
@@ -95,9 +95,10 @@ public class MainActivity extends AppCompatActivity
 
         _ibHeros[20] = (ImageButton) findViewById(R.id.imageButton21);
         _ibHeros[21] = (ImageButton) findViewById(R.id.imageButton22);
+        _ibHeros[22] = (ImageButton) findViewById(R.id.imageButton23);
 
         ///Set Hero Button Listener Events
-        for(int i=0; i < 22; i++)
+        for(int i=0; i < _HSC._iMaxHeroes; i++)
         {
             ///Repurpose setTransitionName as a means to pass the pronunciation of the hero name around.
             _ibHeros[i].setTransitionName(_HSC._sHeroesPro[i]);///API 21
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity
                 }
                 else
                 {
-                    iResult = _HSC.GetRandomInt(1,22)-1;
+                    iResult = _HSC.GetRandomInt(1,_HSC._iMaxHeroes)-1;
                 }
 
                 _HSC._iLastHero = iResult;
@@ -278,7 +279,7 @@ public class MainActivity extends AppCompatActivity
                 dialog.dismiss();
             }
         //}).setTitle("About 'Overwatch: Hero Randomizer'(Build 1.2016.09.09)").setIcon(R.drawable.koigo64).create();
-        }).setTitle("About 'Overwatch: Hero Randomizer'(Build 1.2016.10.29)").setIcon(R.drawable.koigo64).create();
+        }).setTitle("About 'Overwatch: Hero Randomizer'(Build 1.2016.11.10)").setIcon(R.drawable.koigo64).create();
         //Show
         aboutDialog.show();
     }
